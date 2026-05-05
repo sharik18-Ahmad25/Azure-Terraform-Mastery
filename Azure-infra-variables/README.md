@@ -1,28 +1,38 @@
-Topic 02: Mastering Terraform Variables 🚀
+# **Topic 02: Terraform Variables Mastery** 🚀
 
-This repository documents my journey of moving from Hardcoded values to a Dynamic and scalable infrastructure using Terraform variables. I have covered 4 different scenarios to master the logic.
+This repository documents my journey of moving from **Hardcoded** values to a **Dynamic** and scalable infrastructure using Terraform variables. I have covered 4 different scenarios to master the logic.
 
-📖 Key Concepts
-Variables: These are placeholders used to define values once and reuse them throughout the code. They make the configuration reusable and easy to manage.
+---
 
-Count Argument: This is used to create multiple resources of the same type (like multiple Resource Groups) without repeating the code. It helps in avoiding code duplication.
+## **1. Key Concepts** 📖
 
-Terraform.tfvars File: This file is used to assign actual values to the variables. It keeps our infrastructure logic separate from the actual data/values.
+*   **Variables:** These are placeholders used to define values once and reuse them throughout the code. They make the configuration reusable and easy to manage.
+*   **Count Argument:** This is used to create multiple resources of the same type (like multiple Resource Groups) without repeating the code. It helps in avoiding code duplication.
+*   **Terraform.tfvars File:** This file is used to assign actual values to the variables. It keeps our infrastructure logic separate from the actual data/values.
 
+---
 
-📂 Project Scenarios
-Scenario-01-Basic: Introduction to defining and using basic string variables.
+## **2. Project Scenarios** 📂
 
-Scenario-02-Count & Lists: Using count and list(string) to deploy 5 different Department Resource Groups in one go.
+### **Scenario-01: Basic**
+*   Introduced `variables.tf` to remove hardcoded strings.
+*   Learned how to call variables in `main.tf`.
 
-Scenario-03-The .tfvars Way: Professional approach to separating infrastructure logic from user data.
+### **Scenario-02: Count & Lists**
+*   Used `count` along with `list(string)` to deploy 5 different Department Resource Groups (Marketing, Sales, IT, etc.) in a single execution.
+*   Learned how `count.index` helps in picking different names from a list.
 
-Scenario-04-Multi-Location: Advanced mapping where each Resource Group is deployed to a different Azure Region (East US, Central India, etc.) using custom variable files.
+### **Scenario-03: The .tfvars Way**
+*   Implemented the professional industry standard.
+*   Stored all values in `terraform.tfvars`, allowing Terraform to automatically pick them up.
 
+### **Scenario-04: Multi-Location Mapping**
+*   Deployed multiple Resource Groups, each in a **different Azure Region** (e.g., Central India, East US, UK South).
+*   Practiced using custom variable files with the `-var-file` flag.
 
-📸 Proof of Work
-I have included Snapshots in each folder showing:
+---
 
-Terraform Plan: The execution plan before deployment.
-
-Azure Portal: Confirmation that the resources were successfully created.
+## **3. Proof of Work (Evidence)** 📸
+I have included **Snapshots** in each folder to confirm the successful execution:
+1.  **Terraform Plan:** Showing the resources to be created.
+2.  **Azure Portal:** Showing the actual resources deployed in the cloud.
