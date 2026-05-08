@@ -18,21 +18,38 @@ This repository documents my journey of moving from **Hardcoded** values to a **
 *   Introduced `variables.tf` to remove hardcoded strings.
 *   Learned how to call variables in `main.tf`.
 
+**Deployment Result:**
+
+![Scenario 1 Result](./Scenario-01-Basic/S%201%20result.png)
+
+---
+
+
 ### **Scenario-02: Count & Lists**
 *   Used `count` along with `list(string)` to deploy 5 different Department Resource Groups (Marketing, Sales, IT, etc.) in a single execution.
 *   Learned how `count.index` helps in picking different names from a list.
+
+**Deployment Result:**
+![Scenario 2 Result](./Scenario-02-Count-multi-rgs/s%202%20result.png)
+
+---
 
 ### **Scenario-03: The .tfvars Way**
 *   Implemented the professional industry standard.
 *   Stored all values in `terraform.tfvars`, allowing Terraform to automatically pick them up.
 
+**Deployment Result:**
+![Scenario 3 Result](./Scenario-03-tfvars-multi-rgs/s%203%20tfvars%20result.png)
+
+---
+
 ### **Scenario-04: Multi-Location Mapping**
 *   Deployed multiple Resource Groups, each in a **different Azure Region** (e.g., Central India, East US, UK South).
 *   Practiced using custom variable files with the `-var-file` flag.
 
----
+**Deployment Result:**
+![Scenario 4 Result](./Scenario-04-Multi-Loc/s%204%20multi_locations.png)
 
-## **3. Proof of Work (Evidence)** 📸
-I have included **Snapshots** in each folder to confirm the successful execution:
-1.  **Terraform Plan:** Showing the resources to be created.
-2.  **Azure Portal:** Showing the actual resources deployed in the cloud.
+---
+## **3. Summary** ✅
+All scenarios were successfully validated. The use of variables and meta-arguments like `count` has significantly reduced code redundancy and improved maintainability.
