@@ -67,11 +67,13 @@ We followed these steps:
 ## 📸 I have also added snapshots in this project for better understanding.
 
 **Terminal Error Output:**
+
 ![State Lock Error](./state%20lock%20error%20output.png)
 
 ---
 
 **Unlock Evidence:**
+
 ![State Lock Portal](./state%20lock%20break%20output.png)
 
 ---
