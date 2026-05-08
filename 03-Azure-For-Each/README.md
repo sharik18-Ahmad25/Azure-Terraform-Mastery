@@ -52,6 +52,9 @@ When deploying resources in multiple regions
 
 ✔ Simple and useful for identical setups  
 
+**Execution Result:**
+![Scenario 01](./scenario-01-toset/s%201%20toset%20result.png)
+
 ---
 
 ### 🟢 Scenario 02: Using `map()` (in variables file)
@@ -60,13 +63,21 @@ When deploying resources in multiple regions
 
 ✔ Better control for customization  
 
+**Execution Result:**
+![Scenario 02](./scenario-02-map/s%202%20map%20.png)
+
 ---
+
+
 
 ### 🟢 Scenario 03: Using `terraform.tfvars`
 - Data is passed externally using `terraform.tfvars`  
 - Makes code more flexible and production-ready  
 
 ✔ Best practice for real-world projects  
+
+**Execution Result:**
+![Scenario 03](./scenario-03-map-with-tfvars/s%203%20map%20tfvars.png)
 
 ---
 
