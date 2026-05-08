@@ -42,26 +42,26 @@ After unlocking:
 ✅ Deployment can continue normally
 
 
-🏗️ What We Created in This Lab
+## 🏗️ What We Created in This Lab
 
 We followed these steps:
 
-Created a Resource Group (RG)
-Created a Storage Account
-Created a Container
-Used backend block to store Terraform state in the storage account
+- Created a Resource Group (RG)
+- Created a Storage Account
+- Created a Container
+- Used backend block to store Terraform state in the storage account
 
-✅ Key Takeaways
+## ✅ Key Takeaways
 
-State lock avoids conflicts in team environments
-Only one person can run terraform apply at a time
-Lock must be removed if deployment gets stuck
-Remote backend (Storage Account) is required for locking
+- State lock avoids conflicts in team environments
+- Only one person can run terraform apply at a time
+- Lock must be removed if deployment gets stuck
+- Remote backend (Storage Account) is required for locking
 
 
-💡 Simple Summary
+## 💡 Simple Summary
 
-👉 State lock = Safety lock for Terraform state file
-👉 Prevents multiple users from breaking infrastructure
+👉 State lock = Safety lock for Terraform state file  
+👉 Prevents multiple users from breaking infrastructure  
 
-📸 I have also added snapshots in this project for better understanding.
+## 📸 I have also added snapshots in this project for better understanding.
