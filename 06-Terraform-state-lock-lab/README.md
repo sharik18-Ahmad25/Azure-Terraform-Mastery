@@ -34,7 +34,7 @@ User B has 2 options:
 You can manually remove the lock from the backend storage (Azure portal).
 
 ### 2. Break lock using command
-```bash
+
 terraform force-unlock <LOCK_ID>
 
 After unlocking:
