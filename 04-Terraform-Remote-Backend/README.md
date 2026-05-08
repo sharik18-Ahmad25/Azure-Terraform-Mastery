@@ -86,3 +86,11 @@ Terraform asks:
 "Do you want to move your local state to the cloud?"  type - Yes
 
 We confirm it, and the state file is successfully migrated to Azure Storage Account 🎉
+
+**Proof of Migration (Azure Portal):**
+
+I verified that the `terraform.tfstate` file is now successfully uploaded to the Azure Storage Container.
+
+![Remote Backend Result](./statefile%20upload.png)
+
+---
