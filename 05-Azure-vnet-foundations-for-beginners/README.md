@@ -73,20 +73,27 @@ terraform plan
 
 terraform apply
 
-🎯 Goal of This Project
+---
+
+**Infrastructure Verification:**
+![VNet with Subnets Result](./vnet%20with%20subnets%20result.png)
+
+---
+
+### 🎯 Goal of This Project
 
 Understand Azure networking basics
 Learn how to create VNet and Subnets using Terraform
 Practice Infrastructure as Code (IaC)
 
 
-📌 Notes
+### 📌 Notes
 
 Ensure Azure CLI is logged in before running Terraform
 Modify variables as per your requirement
 Keep your state file safe (use remote backend in real projects)
 
 
-🙌 Conclusion
+### 🙌 Conclusion
 
 This project helps beginners build a strong foundation in Azure Networking + Terraform by implementing real-world concepts in a simple way.
