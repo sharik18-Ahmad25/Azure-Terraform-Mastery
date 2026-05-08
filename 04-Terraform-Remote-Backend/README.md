@@ -62,7 +62,7 @@ A **Backend Block** is a piece of code that tells Terraform:
 
 ### Step 4: Backend Block & Initialization
 
-```hcl
+
 terraform {
   backend "azurerm" {
     resource_group_name  = "remote-rg"
