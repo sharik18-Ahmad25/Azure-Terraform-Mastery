@@ -1,7 +1,5 @@
 # 🚀 Azure Linux VM Deployment with Azure Key Vault
 
-# 🚀 Azure Linux VM Deployment with Azure Key Vault
-
 ![Terraform](https://img.shields.io/badge/Terraform-IaC-623CE4?style=for-the-badge&logo=terraform)
 ![Azure](https://img.shields.io/badge/Microsoft%20Azure-Cloud-0078D4?style=for-the-badge&logo=microsoftazure)
 ![Key Vault](https://img.shields.io/badge/Azure-Key%20Vault-0078D4?style=for-the-badge&logo=microsoftazure)
