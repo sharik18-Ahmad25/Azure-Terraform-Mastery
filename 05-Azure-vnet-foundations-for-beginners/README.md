@@ -1,4 +1,16 @@
-# 🚀 Azure Virtual Network (VNet) - Beginner Foundation
+# Azure Virtual Network with Terraform: Networking Foundation Lab 🚀
+
+![Terraform](https://img.shields.io/badge/Terraform-v1.x-623CE4?style=for-the-badge&logo=terraform)
+![Azure](https://img.shields.io/badge/Microsoft_Azure-0078D4?style=for-the-badge&logo=microsoftazure)
+![Azure Networking](https://img.shields.io/badge/Azure-Networking-blue?style=for-the-badge)
+![Virtual Network](https://img.shields.io/badge/Virtual-Network-success?style=for-the-badge)
+![Subnetting](https://img.shields.io/badge/Network-Subnetting-orange?style=for-the-badge)
+![Infrastructure as Code](https://img.shields.io/badge/Infrastructure_as_Code-IaC-purple?style=for-the-badge)
+![Cloud Architecture](https://img.shields.io/badge/Cloud-Architecture-brightgreen?style=for-the-badge)
+![Foundation Lab](https://img.shields.io/badge/Azure-Network_Foundation-important?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Validated-success?style=for-the-badge)
+
+---
 
 This is a simple, beginner-friendly project to understand the basics of Azure Networking using Terraform.
 
