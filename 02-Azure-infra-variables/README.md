@@ -1,5 +1,16 @@
 # **Topic 02: Terraform Variables Mastery** 🚀
 
+![Terraform](https://img.shields.io/badge/Terraform-v1.x-623CE4?style=for-the-badge&logo=terraform)
+![Azure](https://img.shields.io/badge/Microsoft_Azure-Cloud-0078D4?style=for-the-badge&logo=microsoftazure)
+![Infrastructure as Code](https://img.shields.io/badge/Infrastructure_as_Code-IaC-orange?style=for-the-badge)
+![Variables](https://img.shields.io/badge/Terraform-Variables-success?style=for-the-badge)
+![Dynamic Configuration](https://img.shields.io/badge/Configuration-Dynamic-blue?style=for-the-badge)
+![Scalability](https://img.shields.io/badge/Architecture-Scalable-brightgreen?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Production_Ready-success?style=for-the-badge)
+![Learning Path](https://img.shields.io/badge/DevOps-Learning_Path-red?style=for-the-badge)
+
+---
+
 This repository documents my journey of moving from **Hardcoded** values to a **Dynamic** and scalable infrastructure using Terraform variables. I have covered 4 different scenarios to master the logic.
 
 ---
