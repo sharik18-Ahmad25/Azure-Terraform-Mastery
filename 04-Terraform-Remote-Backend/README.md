@@ -1,4 +1,16 @@
-# ☁️ Azure Terraform Remote Backend Project
+# Azure Terraform Remote Backend: Enterprise State Management ☁️
+
+![Terraform](https://img.shields.io/badge/Terraform-v1.x-623CE4?style=for-the-badge&logo=terraform)
+![Azure](https://img.shields.io/badge/Microsoft_Azure-0078D4?style=for-the-badge&logo=microsoftazure)
+![Remote Backend](https://img.shields.io/badge/Terraform-Remote_Backend-6A0DAD?style=for-the-badge)
+![State Management](https://img.shields.io/badge/State-Management-orange?style=for-the-badge)
+![Azure Blob Storage](https://img.shields.io/badge/Azure-Blob_Storage-blue?style=for-the-badge)
+![Collaboration](https://img.shields.io/badge/Team-Collaboration-success?style=for-the-badge)
+![Infrastructure Security](https://img.shields.io/badge/Secure-State_Locking-critical?style=for-the-badge)
+![Production Ready](https://img.shields.io/badge/Deployment-Production_Ready-brightgreen?style=for-the-badge)
+![DevOps Practice](https://img.shields.io/badge/DevOps-Industry_Standard-red?style=for-the-badge)
+
+---
 
 The main goal of this project is to set up a **Remote Backend on Azure**.  
 This ensures that our infrastructure's "record book" (state file) is stored safely in the cloud instead of just on a local laptop.
