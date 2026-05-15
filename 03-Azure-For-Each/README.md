@@ -1,5 +1,17 @@
 # 🚀 Terraform for_each Mastery Lab
 
+![Terraform](https://img.shields.io/badge/Terraform-v1.x-623CE4?style=for-the-badge&logo=terraform)
+![Azure](https://img.shields.io/badge/Microsoft_Azure-0078D4?style=for-the-badge&logo=microsoftazure)
+![for_each](https://img.shields.io/badge/Terraform-for__each-6A0DAD?style=for-the-badge)
+![Infrastructure as Code](https://img.shields.io/badge/Infrastructure_as_Code-IaC-orange?style=for-the-badge)
+![Automation](https://img.shields.io/badge/Cloud-Automation-success?style=for-the-badge)
+![Scalability](https://img.shields.io/badge/Architecture-Scalable-brightgreen?style=for-the-badge)
+![Multi Region](https://img.shields.io/badge/Deployment-Multi_Region-blue?style=for-the-badge)
+![Best Practice](https://img.shields.io/badge/Terraform-Best_Practices-important?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Enterprise_Ready-success?style=for-the-badge)
+
+---
+
 This project demonstrates how to use the `for_each` meta-argument in Terraform to create and manage multiple Azure Resource Groups (RGs) efficiently.
 
 ---
