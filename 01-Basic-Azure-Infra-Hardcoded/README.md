@@ -1,5 +1,13 @@
 # Topic 01: End-to-End Azure Infrastructure Deployment (Hardcoded)
 
+![Terraform](https://img.shields.io/badge/Terraform-IaC-blueviolet?style=for-the-badge&logo=terraform)
+![Azure](https://img.shields.io/badge/Microsoft_Azure-Cloud-blue?style=for-the-badge&logo=microsoftazure)
+![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
+![Infrastructure](https://img.shields.io/badge/Project-Azure_Infra-orange?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+
+---
+
 ## 📌 Project Overview
 
 In this project, I used Terraform to deploy a complete infrastructure flow on Azure. The goal was to understand the basic resource creation process and data upload to a storage service using a hardcoded configuration.
