@@ -1,4 +1,16 @@
-# 🚀 Terraform State Lock Lab
+# Terraform State Lock Lab: Secure Concurrent Infrastructure Management 🚀
+
+![Terraform](https://img.shields.io/badge/Terraform-v1.x-623CE4?style=for-the-badge&logo=terraform)
+![Azure](https://img.shields.io/badge/Microsoft_Azure-0078D4?style=for-the-badge&logo=microsoftazure)
+![State Locking](https://img.shields.io/badge/Terraform-State_Locking-6A0DAD?style=for-the-badge)
+![Concurrency Control](https://img.shields.io/badge/Concurrency-Control-orange?style=for-the-badge)
+![Remote Backend](https://img.shields.io/badge/Remote-Backend-success?style=for-the-badge)
+![Infrastructure Safety](https://img.shields.io/badge/Infrastructure-Safety-critical?style=for-the-badge)
+![Team Collaboration](https://img.shields.io/badge/Team-Collaboration-blue?style=for-the-badge)
+![Conflict Resolution](https://img.shields.io/badge/Deployment-Conflict_Resolution-brightgreen?style=for-the-badge)
+![Production Workflow](https://img.shields.io/badge/DevOps-Production_Workflow-red?style=for-the-badge)
+
+---
 
 ## 📌 Overview
 In this lab, we kept all Terraform code in a single `main.tf` file.  
