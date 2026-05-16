@@ -1,17 +1,25 @@
 # 🌍 Azure Global VNet Peering (Terraform Project)
 
+<p align="center">
+
 ![Terraform](https://img.shields.io/badge/IaC-Terraform-623CE4?style=for-the-badge&logo=terraform&logoColor=white)
 ![Azure](https://img.shields.io/badge/Cloud-Microsoft%20Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white)
 ![VNet Peering](https://img.shields.io/badge/Networking-VNet%20Peering-blue?style=for-the-badge&logo=azuredevops&logoColor=white)
 ![Global Peering](https://img.shields.io/badge/Scope-Global%20Peering-purple?style=for-the-badge)
 
+<br>
+
 ![Build](https://img.shields.io/badge/Build-Passing-brightgreen?style=for-the-badge)
 ![Security](https://img.shields.io/badge/Security-NSG%20Enabled-success?style=for-the-badge)
 ![Connectivity](https://img.shields.io/badge/Connectivity-Private%20Only-informational?style=for-the-badge)
 
+<br>
+
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 ![Maintained](https://img.shields.io/badge/Maintained-Yes-green?style=for-the-badge)
 ![Made With Love](https://img.shields.io/badge/Made%20With-❤-red?style=for-the-badge)
+
+</p>
 
 ---
 
