@@ -1,17 +1,23 @@
 # 📘 Terraform for_each with Map 
 
-# 🚀 Terraform Azure Infrastructure
+<p align="center">
+  <img src="https://img.shields.io/badge/Terraform-v1.5+-623CE4?style=for-the-badge&logo=terraform&logoColor=white" />
+  <img src="https://img.shields.io/badge/Azure-Cloud-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" />
+  <img src="https://img.shields.io/badge/IaC-Infrastructure%20as%20Code-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/DevOps-Ready-critical?style=for-the-badge" />
+</p>
 
-![Terraform](https://img.shields.io/badge/Terraform-v1.5+-623CE4?logo=terraform&logoColor=white)
-![Azure](https://img.shields.io/badge/Azure-Cloud-0078D4?logo=microsoftazure&logoColor=white)
-![IaC](https://img.shields.io/badge/Infrastructure%20as%20Code-IaC-blue)
-![Status](https://img.shields.io/badge/Project-Active-brightgreen)
-![License](https://img.shields.io/badge/License-MIT-yellow)
-![PRs](https://img.shields.io/badge/PRs-Welcome-orange)
-![Maintained](https://img.shields.io/badge/Maintained-Yes-green)
-![Automation](https://img.shields.io/badge/Automation-Terraform-blueviolet)
-![Platform](https://img.shields.io/badge/Platform-Azure-blue)
-![DevOps](https://img.shields.io/badge/DevOps-Ready-critical)
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Maintained-Yes-green?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Automation-Terraform-blueviolet?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Platform-Azure-blue?style=for-the-badge" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/PRs-Welcome-orange?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" />
+</p>
 
 ---
 
