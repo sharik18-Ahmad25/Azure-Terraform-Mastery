@@ -1,25 +1,11 @@
 # 🚀 Terraform Nested Map – Simple Explanation
 
-<p align="center">
-
-  <img src="https://img.shields.io/badge/Terraform-IaC-623CE4?style=for-the-badge&logo=terraform&logoColor=white" />
-  <img src="https://img.shields.io/badge/Azure-Cloud-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" />
-  <img src="https://img.shields.io/badge/DevOps-Automation-0A0A0A?style=for-the-badge&logo=azuredevops&logoColor=white" />
-  <img src="https://img.shields.io/badge/Infrastructure-as%20Code-Important-FF6F00?style=for-the-badge" />
-
-  <br><br>
-
-  <img src="https://img.shields.io/badge/Environment-Dev%20%7C%20Stage%20%7C%20Prod-2E8B57?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Nested%20Map-Terraform%20Concept-8A2BE2?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/for_each-Dynamic%20Infra-1E90FF?style=for-the-badge" />
-
-  <br><br>
-
-  <img src="https://img.shields.io/badge/Multi--Resource-RG%20%2B%20Storage-FF1493?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Scalable-Production%20Ready-228B22?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Maintainable-Codebase-696969?style=for-the-badge" />
-
-</p>
+![Terraform](https://img.shields.io/badge/Terraform-IaC-623CE4?style=flat&logo=terraform&logoColor=white)
+![Azure](https://img.shields.io/badge/Azure-Cloud-0078D4?style=flat&logo=microsoftazure&logoColor=white)
+![DevOps](https://img.shields.io/badge/DevOps-Automation-000000?style=flat&logo=azuredevops&logoColor=white)
+![Nested Map](https://img.shields.io/badge/Nested%20Map-Terraform-8A2BE2?style=flat)
+![for_each](https://img.shields.io/badge/for_each-Dynamic-1E90FF?style=flat)
+![Multi Resource](https://img.shields.io/badge/Multi--Resource-RG%20%2B%20Storage-FF1493?style=flat)
 
 ---
 
