@@ -80,6 +80,7 @@ In this case:
 
 - Everything in one file (simple testing)
 
+```hcl
 resource "azurerm_resource_group" "map_rg" {
   for_each = {
     "sharik-dev-rg"   = "East US"
@@ -90,6 +91,8 @@ resource "azurerm_resource_group" "map_rg" {
   name     = each.key
   location = each.value
 }
+
+```
 ---
 
 ## 🔄 How Loop Works (Behind the Scenes)
@@ -124,6 +127,7 @@ resource "azurerm_resource_group" "map_rg" {
 
 **📁 variables.tf**
 
+```hcl
 variable "rg_environments" {
   type        = map(string)
   description = "RG Name -> Location"
@@ -134,15 +138,18 @@ variable "rg_environments" {
     "sharik-prod-rg"  = "West US"
   }
 }
+```
 ---
 **📁 main.tf**
 
+```hcl
 resource "azurerm_resource_group" "map_rg_var" {
   for_each = var.rg_environments
 
   name     = each.key
   location = each.value
 }
+```
 ---
 
 ## 🔄 How Loop Works Behind the Scenes
@@ -195,11 +202,13 @@ This helps us to:
 
 **📁 terraform.tfvars (Actual Data)**
 
+```hcl
 rg_environments = {
   "sharik-dev-rg"   = "East US"
   "sharik-stage-rg" = "Central US"
   "sharik-prod-rg"  = "West US"
 }
+```
 ---
 
 ## 🔄 How Loop Works Behind the Scenes
