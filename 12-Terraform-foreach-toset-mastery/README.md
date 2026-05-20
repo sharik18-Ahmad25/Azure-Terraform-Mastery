@@ -63,10 +63,12 @@ When using toset() with for_each:
 
 **👉 Internally:**
 
+```hcl
 {
   "rg1" = "rg1",
   "rg2" = "rg2"
 }
+```
 
 **✔ That’s why**:
 
@@ -82,13 +84,16 @@ When using toset() with for_each:
 
 **👉 To understand the basic working of Terraform + toset() without complexity**.
 
-🧾 Code
+**🧾 Code**
+
+```hcl
 resource "azurerm_resource_group" "rg" {
   for_each = toset(["rg-dev", "rg-test", "rg-dev"])
 
   name     = each.value
   location = "East US"
 }
+```
 
 ### ⚙️ What happens?
 
@@ -132,19 +137,23 @@ resource "azurerm_resource_group" "rg" {
 
 **🧾 variables.tf**
 
+```hcl
 variable "rg_names" {
   type = list(string)
 }
+```
 ---
 
 **🧾 main.tf**
 
+```hcl
 resource "azurerm_resource_group" "rg" {
   for_each = toset(var.rg_names)
 
   name     = each.value
   location = "East US"
 }
+```
 
 ---
 
@@ -197,7 +206,11 @@ resource "azurerm_resource_group" "rg" {
 
 **🧾 terraform.tfvars**
 
-- rg_names = ["rg-dev", "rg-stage", "rg-prod"]
+```hcl
+ rg_names = ["rg-dev", "rg-stage", "rg-prod"]
+ 
+ ```
+
 ---
 
 ### ⚙️ How it works
