@@ -171,6 +171,10 @@ This is where the magic binding happens. It attaches our newly created Public IP
    ```
    ---
 
+## 📸 Deployment Verification
+
+![deployment](./pip-nic.png)
+
 ---
 
 ## 🚀 Key Takeaways
