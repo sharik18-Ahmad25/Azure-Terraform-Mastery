@@ -15,6 +15,7 @@ In this project, I used Terraform to deploy a complete infrastructure flow on Az
 ---
 
 ## 🏗️ Resources Created
+
 * **Resource Group:** A logical container named `prod-rg`.
 * **Storage Account:** A Standard LRS storage account named `prdstr`.
 * **Storage Container:** A private container named `prodcntr` for data storage.
