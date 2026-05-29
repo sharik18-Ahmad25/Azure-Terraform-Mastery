@@ -57,10 +57,11 @@ To bring sharikmanualst007 under Terraform management without any downtime and b
 ---
 
 ### 📂 File Structure
-``bash
+```bash
 ├── providers.tf       # Azure Provider Configuration
 ├── main.tf            # Target resource configuration block
 └── README.md          # Lab documentation
+```
 
 ---
 
