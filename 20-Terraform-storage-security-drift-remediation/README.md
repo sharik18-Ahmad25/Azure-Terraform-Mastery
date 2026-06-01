@@ -1,7 +1,5 @@
 # Terraform Security Drift Detection & Auto Remediation in Azure
 
-# Terraform Security Drift Detection & Auto Remediation in Azure
-
 ![Terraform](https://img.shields.io/badge/IaC-Terraform-623CE4?logo=terraform)
 ![Azure](https://img.shields.io/badge/Cloud-Microsoft%20Azure-0078D4?logo=microsoftazure)
 ![DevOps](https://img.shields.io/badge/Domain-DevOps-blue)
