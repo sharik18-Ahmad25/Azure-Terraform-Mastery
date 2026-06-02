@@ -26,6 +26,7 @@ Think of it as Terraform’s "Memory" or "Brain"—it knows exactly what has bee
 ---
 
 ### 2. What is a Backend Block?
+
 By default, Terraform saves the state file on your own computer (locally).  
 A **Backend Block** is a piece of code that tells Terraform:
 
@@ -53,12 +54,14 @@ A **Backend Block** is a piece of code that tells Terraform:
 ## 🛠 Implementation Steps
 
 ### Step 1: Resource Group Deployment (Using `for_each`)
+
 - Created Resource Groups using `for_each` for scalability.  
 - Names and values were stored in `terraform.tfvars` to keep the code clean.
 
 ---
 
 ### Step 2: Storage Account (Using Variables)
+
 - Created a Storage Account to store the state file.  
 - Used variables for flexibility.  
 - Linked it with the Resource Group created in Step 1.
@@ -66,6 +69,7 @@ A **Backend Block** is a piece of code that tells Terraform:
 ---
 
 ### Step 3: Storage Container
+
 - Created a **private container** inside the Storage Account.  
 - This is where the `terraform.tfstate` file is stored.  
 - Container name is managed using `terraform.tfvars`.
@@ -73,8 +77,7 @@ A **Backend Block** is a piece of code that tells Terraform:
 ---
 
 ### Step 4: Backend Block & Initialization
-
-
+```bash
 terraform {
   backend "azurerm" {
     resource_group_name  = "remote-rg"
@@ -83,17 +86,21 @@ terraform {
     key                  = "terraform.tfstate"
   }
 }
+```
+
+---
 
 
-🚀 Final Result
+### 🚀 Final Result
 
-After configuring the backend:
+**After configuring the backend:**
 
-Run:
-
+- Run:
+```bash
 terraform init
+```
 
-Terraform asks:
+- Terraform asks:
 
 "Do you want to move your local state to the cloud?"  type - Yes
 
