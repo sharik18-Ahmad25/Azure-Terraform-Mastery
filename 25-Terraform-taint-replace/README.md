@@ -1,10 +1,6 @@
 # Terraform Taint (Deprecated) vs -replace (Recommended)
 
-![Terraform](https://img.shields.io/badge/Infrastructure-Terraform-623CE4?logo=terraform)
-![Azure](https://img.shields.io/badge/Cloud-Azure-0078D4?logo=microsoftazure)
-![IaC](https://img.shields.io/badge/Type-Infrastructure%20as%20Code-blue)
-![Status](https://img.shields.io/badge/Status-Active-success)
-![PRs](https://img.shields.io/badge/PRs-Welcome-blue)
+
 
 ---
 
