@@ -91,24 +91,23 @@ Only the `Terraform logical name` is changing.
 
 ---
 
-❌ What Happens Without a Moved Block?
+## ❌ What Happens Without a Moved Block?
 
 I renamed the Terraform resource from:
 
-rg
+`rg`
 
 to
 
-resource_group
+`resource_group`
 
 Then I executed:
 
-terraform plan
+`terraform plan`
 
 Terraform returned:
 
-- Destroy
-+ Create
+`- Destroy + Create`
 
 At first this looks strange.
 
@@ -116,17 +115,17 @@ Why is Terraform trying to destroy the Resource Group?
 
 I never changed the Azure resource name.
 
-The answer is simple.
+**The answer is simple.**
 
-Terraform compares its configuration with the Terraform State.
+Terraform compares its configuration with the `Terraform State.`
 
 Before renaming, the state contained:
 
-azurerm_resource_group.rg
+`azurerm_resource_group.rg`
 
 After renaming the code, Terraform searched for:
 
-azurerm_resource_group.resource_group
+`azurerm_resource_group.resource_group`
 
 Since those addresses don't match, Terraform assumes:
 
@@ -137,48 +136,46 @@ That's why it plans a`Destroy + Create` operation.
 
 ---
 
-✅ The Solution
+### ✅ The Solution
 
 Instead of allowing Terraform to recreate the infrastructure, I created a new file called:
 
-moved.tf
+`moved.tf`
 
-Inside that file I added a moved block.
+Inside that file I added a `moved block`.
 
 The moved block tells Terraform:
 
-"Don't worry. This isn't a new resource. I only changed its Terraform address."
+`"Don't worry. This isn't a new resource. I only changed its Terraform address."`
 
 After adding the moved block, I executed:
 
-terraform plan
+`terraform plan`
 
 Terraform now understands the relationship between the old and new resource addresses.
 
 The output becomes:
 
-No changes.
-Infrastructure matches the configuration.
+`No changes Infrastructure matches the configuration.`
+
 
 Exactly what we wanted.
 
 ---
 
-🎉 Final Result
+### 🎉 Final Result
 
 Finally, I ran:
 
-terraform apply
+`terraform apply`
 
-Terraform updated only its state file.
+Terraform updated only its `state file.`
 
-The Azure Resource Group was never recreated.
+The Azure Resource Group was `never recreated.`
 
 The final output showed:
 
-0 Added
-0 Changed
-0 Destroyed
+`0 Added 0 Changed 0 Destroyed`
 
 The only thing that changed was the Terraform resource address.
 
@@ -198,11 +195,11 @@ terraform-moved-block/
 
 ## 🧪 Hands-on Lab
 
-**Step 1**
+### Step 1
 
 Deploy an Azure Resource Group.
 
-Run:
+**Run:**
 ```bash
 terraform init
 terraform plan
@@ -215,25 +212,25 @@ Verify the Terraform state.
 
 `azurerm_resource_group.rg`
 
-![rg](./Screenshots/before-1.png)
+![initial state](./Screenshots/01-%20initial-state.png)
 
 ---
 
-**Step 2**
+### Step 2
 
 Rename the Terraform logical resource.
 
-Before:
+**Before:**
 
-rg
+`rg`
 
-After:
+**After:**
 
-resource_group
+`resource_group`
 
-Run:
+`Run:`
 
-terraform plan
+`terraform plan`
 
 Terraform plans to recreate the resource.
 
@@ -241,89 +238,98 @@ Terraform plans to recreate the resource.
 
 `- Destroy + Create`
 
-![plan](./Screenshots/2.png)
+![destroy&create](./Screenshots/02-destroy-create-plan.png)
 
 ---
 
-Step 3
+### Step 3
 
 Create a new file:
 
-moved.tf
+`moved.tf`
 
 Add the moved block.
 
 Run:
 
-terraform plan
+`terraform plan`
 
 Terraform now recognizes the resource correctly.
 
-📸 Screenshot 3
-No changes.
-Infrastructure matches the configuration.
+### 📸 Screenshot 3
 
-![with moved block](./Screenshots/3.png)
+`No changes Infrastructure matches the configuration.`
+
+![no changes](./Screenshots/03-no-changes-plan.png)
 
 ---
 
-Step 4
+### Step 4
 
 Apply the configuration.
 
-terraform apply
+`terraform apply`
 
 Terraform updates only its state.
 
-📸 Screenshot 4
-0 Added
-0 Changed
-0 Destroyed
+### 📸 Screenshot 4
 
-azurerm_resource_group.resource_group
+`0 Added 0 Changed 0 Destroyed`
 
-![done](./Screenshots/done.png)
+`azurerm_resource_group.resource_group`
+
+![final state](./Screenshots/04-final-state.png)
 
 ---
 
-💡 Key Learnings
-A moved block does not rename Azure resources.
-It only updates the Terraform resource address inside the state.
-It prevents unnecessary destroy and recreate operations.
-It helps safely refactor Terraform code.
-It is commonly used when improving naming conventions or moving resources between modules.
-It is a valuable feature for production environments where infrastructure must remain available.
-🎯 Interview Questions
-1. What is a Terraform moved block?
+### 💡 Key Learnings
+
+* ✅A moved block does not rename Azure resources.
+* ✅It only updates the Terraform resource address inside the state.
+* ✅It prevents unnecessary destroy and recreate operations.
+* ✅It helps safely refactor Terraform code.
+* ✅It is commonly used when improving naming conventions or moving resources between modules.
+* ✅It is a valuable feature for production environments where infrastructure must remain available.
+
+### 🎯 Interview Questions
+
+**1. What is a Terraform moved block?**
 
 A moved block tells Terraform that a resource has only changed its Terraform resource address and should not be recreated.
 
-2. Does a moved block rename Azure resources?
+**2. Does a moved block rename Azure resources?**
 
 No.
 
 It only updates Terraform's state.
 
-3. Why did Terraform plan to destroy my resource after renaming it?
+**3. Why did Terraform plan to destroy my resource after renaming it?**
 
 Because Terraform could no longer match the new resource address with the address stored in the state file.
 
-4. What problem does a moved block solve?
+**4. What problem does a moved block solve?**
 
 It prevents unnecessary infrastructure replacement during Terraform code refactoring.
 
-5. When should you use a moved block?
-Renaming Terraform resources
-Improving naming conventions
-Moving resources into modules
-Refactoring Terraform code
-⭐ Conclusion
+**5. When should you use a moved block?**
 
-The moved block is a small feature with a big impact.
+* ✅Renaming Terraform resources
+* ✅Improving naming conventions
+* ✅Moving resources into modules
+* ✅Refactoring Terraform code
 
-It allows developers to improve Terraform code without affecting existing infrastructure.
+---
 
-Instead of destroying and recreating resources, Terraform simply updates its state and continues managing the same infrastructure safely.
 
-Understanding this concept is an important step toward writing production-ready Terraform code.
+### ⭐ Conclusion
+
+* The moved block is a small feature with a big impact.
+
+* It allows developers to improve Terraform code without affecting existing infrastructure.
+
+* Instead of destroying and recreating resources, Terraform simply updates its state and continues managing the same infrastructure safely.
+
+* Understanding this concept is an important step toward writing production-ready Terraform code.
+
+---
 
