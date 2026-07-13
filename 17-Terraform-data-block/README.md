@@ -1,4 +1,4 @@
-# Demystifying Terraform Data Blocks (Data Sources) 🚀
+# Terraform Data Blocks (Data Sources) 🚀
 
 ![Terraform](https://img.shields.io/badge/Terraform-v1.0+-purple?logo=terraform)
 ![Azure](https://img.shields.io/badge/Azure-Cloud-blue?logo=microsoftazure)
